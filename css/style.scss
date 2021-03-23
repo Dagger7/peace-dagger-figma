@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import "css/vars.scss";
+
+@import "./header.scss";
+
+@import "./main/about.scss";
+@import "./main/staff.scss";
+@import "./main/news.scss";
+
+@import "./footer.scss";
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    @media (max-width: 1130px) {
+        margin-top: 65px;
+        
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+	width: 1130px;
+	margin: auto;
+	display: flex;
+	@media (max-width: 1130px) {
+		justify-content: center;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divider {
+    border-bottom: 1px solid #D8670D;
+    box-shadow: 0px 0px 12px #D8670D;
+
+    @media (max-width: 1130px) {
+      border-color: #D4D4D4;
+      box-shadow: 0px 0px 12px #D4D4D4;
+    }
+}

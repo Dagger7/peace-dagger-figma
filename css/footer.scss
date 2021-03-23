@@ -1,0 +1,20 @@
+.footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 1130px) {
+        flex-direction: column;
+    }
+    
+    &__item {
+        display: inline-block;
+        font-style: 400;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}

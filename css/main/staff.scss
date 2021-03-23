@@ -1,0 +1,85 @@
+@import "css/vars.scss";
+
+.staff {
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+    &__type{
+        margin: 0px;
+        padding: 0px;
+        font-style: 400;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        background: none;
+        border: none;
+        outline: none;
+        color: #A5A5A5;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+        
+        &--active{
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+    }
+
+    @media (max-width: 1130px) {
+        padding-left: 28px;
+        padding-right: 28px;
+        padding-top: 42px;
+    }
+}
+
+.staff-members {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        display: flex;
+        width: 280px;
+        margin-bottom: 35px;
+
+        @media (max-width: 1130px) {
+            width: 100%;
+        }
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    &__info {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 700;
+
+        &--ru {
+            color: $accentColor1;
+            margin-bottom: 5px;
+        }
+
+        &--eng {
+            font-weight: 400;
+            color: #A5A5A5;
+        }
+    }
+}
